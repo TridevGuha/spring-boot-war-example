@@ -23,7 +23,7 @@ public class HelloWorldApplication extends SpringBootServletInitializer {
 
     @RequestMapping("/")
     String helloWorld() {
-        return "5. Hello DevOPS, test again!";
+        return "5. Hello DevOPS, test again with 3rd ec2- jenkins' only slave!";
     }
 
 }
