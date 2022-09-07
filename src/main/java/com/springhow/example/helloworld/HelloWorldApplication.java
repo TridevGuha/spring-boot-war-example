@@ -23,7 +23,7 @@ public class HelloWorldApplication extends SpringBootServletInitializer {
 
     @RequestMapping("/")
     String helloWorld() {
-        return "1. Hello DevOPS, Welcome to Continious Deployment.";
+        return "22. Hello DevOPS, Welcome to Continious Deployment.";
     }
 
 }
