@@ -5,6 +5,7 @@
 # 1 = error code
 # 2 = error message.
 
+: '
 . ./scripts/variables.sh
 
 function print_exit(){
@@ -43,6 +44,7 @@ function installPackage() {
 function mavenTarget(){
     local mavenCmd=${1}
     mvn ${mavenCmd} > /dev/null &
+'
     last_command_pid=$!
     showProgress ${last_command_pid}
     wait ${last_command_pid} || print_exit 1 "${mavenCmd} fail."
