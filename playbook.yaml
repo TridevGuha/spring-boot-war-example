@@ -1,0 +1,5 @@
+---
+- hosts: server
+  tasks:
+    - name: go to pom.xml directory
+      shell: bash /var/lib/jenkins/spring-boot-war-example/mvnrun.sh
