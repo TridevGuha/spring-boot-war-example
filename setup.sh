@@ -4,8 +4,8 @@
 # run ./setup.sh to run this project.
 #####
 # Include files. 
-. ./scripts/utils.sh
-. ./scripts/variables.sh
+# ./scripts/utils.sh
+#. ./scripts/variables.sh
 
 
 : '
