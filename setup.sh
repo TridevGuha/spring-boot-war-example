@@ -8,7 +8,7 @@
 . ./scripts/variables.sh
 
 
-'
+: '
 function clean_up(){
     if rm -rf ./target
     then
