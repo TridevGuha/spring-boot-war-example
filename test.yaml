@@ -1,0 +1,5 @@
+---
+- hosts: server
+  tasks:
+    - name: check path ansible
+      shell: cd $WORKSPACE && pwd && ls
