@@ -1,7 +1,8 @@
 ---
 - hosts: server
   tasks:
-    - name: go to pom.xml directory
-      shell: cd $WORKSPACE && mvn build && mvn clean install
-#      shell: cd workspace/mvn-build && bash mvnrun.sh
+    - name: run Maven build - resolves dependencies
+      shell: mvn build
+    - name: run Maven clean install - creates actual jar/war file
+      shell: mvn clean install
 
