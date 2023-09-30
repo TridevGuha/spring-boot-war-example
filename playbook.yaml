@@ -2,10 +2,5 @@
 - hosts: server
   tasks:
     - name: run Maven clean install - creates actual jar/war file
-      shell: echo "workspace=" $WORKSPACE && pwd ls
-      register: abc
-      
-    - debug: var=abc.stdout_lines
-    
-      #&& mvn clean install
+      shell: mvn clean install
 
