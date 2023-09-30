@@ -2,5 +2,6 @@
 - hosts: server
   tasks:
     - name: go to pom.xml directory
-      shell: cd workspace/mvn-build && bash mvnrun.sh
+      shell: cd workspace/ && mvn-build && mvn clean install
+#      shell: cd workspace/mvn-build && bash mvnrun.sh
 
